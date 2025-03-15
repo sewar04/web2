@@ -15,6 +15,7 @@
         .banner {
             background: url('desert.jpg') no-repeat center center/cover;
             height: 100vh;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -31,17 +32,12 @@
         .navbar .logo {
             width: 60px;
             height: auto;
-        }
-
-        .navbar nav {
-            flex-grow: 1;
-            text-align: center;
+            margin: 20px;
         }
 
         .navbar ul {
             list-style: none;
             display: flex;
-            justify-content: center;
             margin: 0;
             padding: 0;
         }
@@ -87,27 +83,14 @@
         }
 
         @media (max-width: 768px) {
-            .navbar {
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 10px;
-            }
-            .navbar .logo {
-                width: 50px;
-            }
-            .navbar nav ul {
-                display: flex;
-                justify-content: center;
-                padding-left: 0;
-            }
-            .navbar ul li {
-                margin: 0 10px;
+            .banner {
+                height: 100vh;
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-
     <div class="banner">
         <div class="navbar">
            <img class="logo" src="mountains.jpg" alt="Logo"> 
@@ -127,5 +110,50 @@
             <button type="button">DOWNLOAD IT HERE</button>
         </div>
     </div>
+
+    <section class="work-section">
+        <h2>Some Of Our Work</h2>
+        <p>Explore some of our best projects and designs.</p>
+        <hr class="divider">
+        <div class="image-grid">
+            <img src="kitten.jpg" alt="Work 1">
+            <img src="forest.jpg" alt="Work 2">
+            <img src="benches.jpg" alt="Work 3">
+            <img src="tree.jpg" alt="Work 4">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Features And Services</h2>
+        <p class="description">We offer various digital solutions tailored to your needs.</p>
+        <div class="hr-line"></div>
+        <div class="services">
+            <div class="service">
+                <h3>Photography</h3>
+                <p>High-quality photography services for all occasions.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Building modern and responsive websites.</p>
+            </div>
+            <div class="service">
+                <h3>Content Editing</h3>
+                <p>Professional editing for your content and media.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Subscribe to stay updated with our latest news.</p>
+        <div class="hr-line"></div>
+        <input type="email" placeholder="Email" />
+        <button class="subscribe">Subscribe Now</button>
+    </section>
+
+    <footer>
+        <p>Made by Tutorialsline. Images courtesy of Unsplash. No attribution required.</p>
+    </footer>
 </body>
 </html>
+
