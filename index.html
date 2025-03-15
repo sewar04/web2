@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +14,11 @@
             background-color: #f9f9f9;
         }
         .banner {
-            background: url('desert.jpg') no-repeat center center/cover;
-            height: 100vh;
-            width: 100%;
+            background: url('desert.jpg') no-repeat center center/cover;     
+            height: 100vh; 
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: flex-start; 
         }
 
         .navbar {
@@ -26,7 +26,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background: none;
+            background: none;   
         }
 
         .navbar .logo {
@@ -81,16 +81,134 @@
         .content button:hover {
             background: #0056b3;
         }
+        .work-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .work-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .work-section p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .divider {
+            width: 120px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: calc(50% - 10px); 
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
         @media (max-width: 768px) {
-            .banner {
-                height: 100vh;
-                width: 100%;
+            .image-grid img {
+                width: 100%; 
             }
         }
+
+        .features {
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .features .description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .hr-line {
+            width: 130px;
+            height: 2px;
+            background-color: #0779f3;
+            margin: 20px auto;
+            border: none;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service {
+            padding: 10px 20px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            color: #000000;
+            font-size: 18px;
+        }
+
+        .newsletter {
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 60%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subscribe {
+            background-color: #0e519a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #343A40;
+            color: #fff;
+            padding: 70px; 
+            font-size: 12px;
+        }
+
     </style>
 </head>
 <body>
+
     <div class="banner">
         <div class="navbar">
            <img class="logo" src="mountains.jpg" alt="Logo"> 
@@ -110,10 +228,10 @@
             <button type="button">DOWNLOAD IT HERE</button>
         </div>
     </div>
-
+    
     <section class="work-section">
         <h2>Some Of Our Work</h2>
-        <p>Explore some of our best projects and designs.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi quo soluta libero beatae tempora explicabo asperiores ex esse cumque animi id, facere fugit rerum quidem voluptas expedita laborum similique.</p>
         <hr class="divider">
         <div class="image-grid">
             <img src="kitten.jpg" alt="Work 1">
@@ -123,37 +241,38 @@
         </div>
     </section>
 
+   
     <section class="features">
         <h2>Features And Services</h2>
-        <p class="description">We offer various digital solutions tailored to your needs.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis at ipsum bibendum ultricies. Morbi vitae pulvinar velit.</p>
         <div class="hr-line"></div>
         <div class="services">
             <div class="service">
                 <h3>Photography</h3>
-                <p>High-quality photography services for all occasions.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis et ipsum bibendum ultricies vitae pulvinar velit.</p>
             </div>
             <div class="service">
                 <h3>Web Development</h3>
-                <p>Building modern and responsive websites.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis et ipsum bibendum ultricies vitae pulvinar velit.</p>
             </div>
             <div class="service">
                 <h3>Content Editing</h3>
-                <p>Professional editing for your content and media.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis et ipsum bibendum ultricies vitae pulvinar velit.</p>
             </div>
         </div>
     </section>
 
     <section class="newsletter">
         <h2>Join Our Newsletter</h2>
-        <p>Subscribe to stay updated with our latest news.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id felis et ipsum bibendum ultricies.</p>
         <div class="hr-line"></div>
         <input type="email" placeholder="Email" />
         <button class="subscribe">Subscribe Now</button>
     </section>
 
     <footer>
-        <p>Made by Tutorialsline. Images courtesy of Unsplash. No attribution required.</p>
+        <p>Made by Tutorialsline. Images courtesy to Unsplash. No attribution required. You can remove this footer.</p>
     </footer>
+
 </body>
 </html>
-
