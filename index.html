@@ -17,119 +17,97 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
+            justify-content: flex-start;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            background: none;
         }
+
         .navbar .logo {
-            width: 50px;
+            width: 60px;
+            height: auto;
         }
+
+        .navbar nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
         .navbar ul {
             list-style: none;
             display: flex;
-            padding: 0;
+            justify-content: center;
             margin: 0;
+            padding: 0;
         }
+
         .navbar ul li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
+
         .navbar ul li a {
             text-decoration: none;
             color: white;
             font-size: 1rem;
         }
+
+        .content {
+            text-align: center;
+            margin-top: 130px;
+        }
+
         .content h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
-        .content p {
-            font-size: 1rem;
-        }
+
         .content button {
             padding: 10px 20px;
             background: #007bff;
             border: none;
             color: white;
             border-radius: 5px;
+            font-size: 1rem;
             cursor: pointer;
+            transition: background 0.3s;
         }
-        .work-section {
-            text-align: center;
-            padding: 30px 10px;
+
+        .content button:hover {
+            background: #0056b3;
         }
-        .image-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        .image-grid img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 10px;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .service {
-            text-align: center;
-            width: 100%;
-            max-width: 300px;
-        }
-        .newsletter {
-            text-align: center;
-            padding: 20px;
-        }
-        .newsletter input {
-            width: 80%;
-            max-width: 400px;
-            padding: 10px;
-        }
-        footer {
-            text-align: center;
-            background-color: #343A40;
-            color: white;
-            padding: 20px;
-        }
+
         @media (max-width: 768px) {
             .navbar {
-                flex-direction: column;
-                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px;
             }
-            .navbar ul {
-                flex-direction: column;
-                padding-top: 10px;
+            .navbar .logo {
+                width: 50px;
+            }
+            .navbar nav ul {
+                display: flex;
+                justify-content: center;
+                padding-left: 0;
             }
             .navbar ul li {
-                margin: 5px 0;
-            }
-            .content h1 {
-                font-size: 2rem;
-            }
-            .services {
-                flex-direction: column;
-                align-items: center;
+                margin: 0 10px;
             }
         }
     </style>
 </head>
 <body>
+
     <div class="banner">
         <div class="navbar">
            <img class="logo" src="mountains.jpg" alt="Logo"> 
@@ -142,46 +120,12 @@
                 </ul>
             </nav>
         </div>
+
         <div class="content">
             <h1>Responsive Flexbox Template</h1>
             <p>A freebie by Tutorialzine</p>
             <button type="button">DOWNLOAD IT HERE</button>
         </div>
     </div>
-    
-    <section class="work-section">
-        <h2>Some Of Our Work</h2>
-        <div class="image-grid">
-            <img src="kitten.jpg" alt="Work 1">
-            <img src="forest.jpg" alt="Work 2">
-            <img src="benches.jpg" alt="Work 3">
-            <img src="tree.jpg" alt="Work 4">
-        </div>
-    </section>
-    
-    <section class="services">
-        <div class="service">
-            <h3>Photography</h3>
-            <p>High-quality photo services.</p>
-        </div>
-        <div class="service">
-            <h3>Web Development</h3>
-            <p>Modern and responsive web design.</p>
-        </div>
-        <div class="service">
-            <h3>Content Editing</h3>
-            <p>Professional content writing and editing.</p>
-        </div>
-    </section>
-    
-    <section class="newsletter">
-        <h2>Join Our Newsletter</h2>
-        <input type="email" placeholder="Enter your email">
-        <button class="subscribe">Subscribe Now</button>
-    </section>
-    
-    <footer>
-        <p>Made by Tutorialsline. Images courtesy of Unsplash. No attribution required.</p>
-    </footer>
 </body>
 </html>
